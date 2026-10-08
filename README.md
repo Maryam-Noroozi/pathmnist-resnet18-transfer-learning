@@ -12,8 +12,9 @@ Fine-tuning ResNet18 for medical image classification on the PathMNIST dataset u
 
 ## 🛠️ Code Implementation
 
-### 2. Model Setup
+
 ```python
+### 1. Model Setup
 import torch
 import torchvision.models
 
@@ -27,7 +28,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.AdamW(model.parameters(), lr=0.001)
 
 
-### 1. Data Transforms & Dataloaders
+### 2. Data Transforms & Dataloaders
 !pip install medmnist
 
 import torchvision.transforms as transforms
